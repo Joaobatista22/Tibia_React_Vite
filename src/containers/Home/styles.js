@@ -43,13 +43,13 @@ const moveUpDown = keyframes`
 `;
 
 export const LogoTibia = styled.img`
-    width: 32%;
+    width: 54%;
     animation: ${moveUpDown} 4s infinite;
 `;
 
 export const Container = styled.div`
     position: relative;
-    top: 14rem;
+    top: 20rem;
     width: 90%;
     left: 50%;
     transform: translateX(-50%);

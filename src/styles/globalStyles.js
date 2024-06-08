@@ -6,10 +6,9 @@ const globalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    font-family: Arial, sans-serif;
     }
-    button {
-        cursor: pointer;
-    }
+
 `;
 
 export default globalStyles;

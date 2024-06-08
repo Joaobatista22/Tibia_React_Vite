@@ -28,6 +28,7 @@ export const ContainerItems = styled.div`
 export const Image = styled.img`
     width: 140px;
     padding: 20px 5px;
+    z-index: 1;
 `;
 export const Button = styled.button`
     background-color: #9758a6;
@@ -37,9 +38,10 @@ export const Button = styled.button`
     font-size: medium;
     color: #ffff;
     border-radius: 0 0 10px 10px;
+    cursor: pointer;
+
     :hover {
         opacity: 0.7;
         cursor: pointer;
-        /* Altera a cor de fundo do botão quando o cursor está sobre ele */
     }
 `;
