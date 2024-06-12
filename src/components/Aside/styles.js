@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import backgroundImage from '../../assets/Aside/background.gif';
+import backgroundRanks from '../../assets/Aside/RankImg.png';
 
 export const AsideBox = styled.div`
     margin: 30px 0;
@@ -39,7 +40,7 @@ export const ContainerRanks = styled.div`
     height: 88%;
     width: 90%;
     padding: 4em 0;
-    background-image: url(/src/assets/Aside/RankImg.png);
+    background-image: url(${backgroundRanks});
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr;
