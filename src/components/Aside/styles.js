@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import backgroundImage from '../../assets/Aside/background.gif';
+
 export const AsideBox = styled.div`
     margin: 30px 0;
     height: 60rem;
@@ -9,7 +11,7 @@ export const AsideBox = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 8px 0;
-    background-image: url(/src/assets/Aside/background.gif);
+    background-image: url(${backgroundImage});
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
