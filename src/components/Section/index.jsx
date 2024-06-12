@@ -11,6 +11,7 @@ import {
     VocationsWrapper,
     ContainerBackground,
     ConteinerText,
+    P,
 } from './styles';
 
 export function Section() {
@@ -33,15 +34,10 @@ export function Section() {
                         alt="Imagem Quests"
                     />
                     <TextContent>
-                        <h1 style={{ fontSize: '24px', color: '#5a2800' }}>
+                        <h1 style={{ fontSize: '26px', color: '#5a2800' }}>
                             Primeiros Passos
                         </h1>
-                        <p
-                            style={{
-                                fontSize: '18px',
-                                color: '#5a2800',
-                            }}
-                        >
+                        <P>
                             Você começará sua aventura com um tutorial em uma
                             caverna misteriosa. Ao criar um novo personagem é
                             possível pular este tutorial. Basta deixar a caixa
@@ -61,19 +57,13 @@ export function Section() {
                             lembrar a entrada da sua masmorra favorita, para
                             encontrar um NPC especial ou para marcar o caminho
                             para sua própria casa.
-                        </p>
+                        </P>
                     </TextContent>
                 </ContentWrapper>
-                <h1 style={{ fontSize: '24px', color: '#5a2800' }}>
+                <h1 style={{ fontSize: '26px', color: '#5a2800' }}>
                     Vocations
                 </h1>
-                <p
-                    style={{
-                        fontSize: '18px',
-                        color: '#5a2800',
-                        padding: '30px',
-                    }}
-                >
+                <P>
                     A escolha da vocação do jogador define o rumo de sua
                     jornada. Equipamentos, caçadas, habilidades, entre muitos
                     outros detalhes se definem através desta decisão. Após o
@@ -86,7 +76,7 @@ export function Section() {
                     posteriormente, viajarão para o continente principal. Sendo
                     assim, cada jogador pode escolher uma vocação distinta para
                     seguir. São elas:
-                </p>
+                </P>
                 <VocationsWrapper>
                     <ContainerVocations>
                         <Image
@@ -117,19 +107,13 @@ export function Section() {
                         <Button>Sorcerers</Button>
                     </ContainerVocations>
                 </VocationsWrapper>
-                <p
-                    style={{
-                        fontSize: '18px',
-                        color: '#5a2800',
-                        padding: '20px 35px 75px 55px',
-                    }}
-                >
+                <P>
                     Cada vocação tem uma quantidade diferente de Capacidade,
                     Hitpoints, e Mana, que são obtidos a cada avanço de level,
                     cada vocação tem um ritmo diferente de Regeneração de
                     Hitpoints e Mana. Além destas, a sua vocação também
                     determina a velocidade de avanço em determinadas habilidades
-                </p>
+                </P>
             </ContainerBackground>
         </QuickGuide>
     );

@@ -10,6 +10,9 @@ export const QuickGuide = styled.div`
     align-items: center;
     padding: 8px 0;
     background-image: radial-gradient(#7f3d92, #000000);
+    @media (max-width: 1580px) {
+        padding: 8px 12px;
+    }
 `;
 export const ContainerBackground = styled.div`
     position: relative;
@@ -94,7 +97,7 @@ export const VocationsWrapper = styled.div`
 `;
 
 export const ContainerVocations = styled.div`
-    position: relative; /* Adicionado para o posicionamento absoluto do ::after */
+    position: relative;
     box-shadow: 0 2px 7px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     width: 210px;
@@ -110,25 +113,17 @@ export const ContainerVocations = styled.div`
     background-size: cover;
     background-position: center;
     ::after {
-        content: '';
-        position: absolute;
-        height: calc(
-            100% + 5px
-        ); /* Ajusta a altura para cobrir totalmente o contêiner */
-        width: calc(
-            100% + 2px
-        ); /* Ajusta a largura para cobrir totalmente o contêiner */
-        top: -3px; /* Move o pseudo-elemento para cima */
-        left: -2px; /* Move o pseudo-elemento para a esquerda */
-        background: linear-gradient(
-            80deg,
-            rgba(0, 0, 0, 0.85),
-            rgba(0, 0, 0, 0.7) 40%,
-            transparent 85%
-        );
         border-radius: 10px;
     }
     &:hover {
         transform: scale(1.1);
+    }
+`;
+export const P = styled.p`
+    font-size: 21px;
+    color: #5a2800;
+    padding: 10px 10px;
+    @media (max-width: 1580px) {
+        font-size: 16px;
     }
 `;

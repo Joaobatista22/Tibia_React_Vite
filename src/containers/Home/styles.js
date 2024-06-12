@@ -4,13 +4,14 @@ import backgroundImage from '../../assets/Wallpaper.jpg';
 
 export const Wallpaper = styled.div`
     position: relative;
-    min-height: 100vh; /* Garante que a altura mínima seja 100% da altura da janela */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Permite que o conteúdo seja empilhado verticalmente */
+    flex-direction: column;
     overflow: hidden;
+
     &::before {
         content: '';
-        position: fixed; /* Torna a imagem de fundo fixa */
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -26,11 +27,15 @@ export const Wallpaper = styled.div`
 
 export const DivLogo = styled.div`
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        top: 1.5rem;
+    }
 `;
 
 const moveUpDown = keyframes`
@@ -43,8 +48,16 @@ const moveUpDown = keyframes`
 `;
 
 export const LogoTibia = styled.img`
-    width: 54%;
+    width: 44%;
     animation: ${moveUpDown} 4s infinite;
+
+    @media (max-width: 768px) {
+        width: 70%;
+    }
+
+    @media (max-width: 480px) {
+        width: 90%;
+    }
 `;
 
 export const Container = styled.div`
@@ -53,10 +66,25 @@ export const Container = styled.div`
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (max-width: 1580px) {
+        top: 16rem;
+    }
+
+    @media (max-width: 480px) {
+        top: 5rem;
+    }
 `;
 
 export const DownTown = styled.div`
     margin-bottom: 20em;
     display: flex;
     gap: 30px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 10em;
+    }
 `;

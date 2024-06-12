@@ -27,6 +27,7 @@ export function CategoryCarousel() {
                         src="https://tibiawiki.com.br/images/6/63/Icone7.png"
                         alt="Imagem Quests"
                     />
+
                     <Button>Quests</Button>
                 </ContainerItems>
                 <ContainerItems>

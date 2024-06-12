@@ -11,8 +11,9 @@ export const Container = styled.div`
 
 export const ContainerItems = styled.div`
     box-shadow: 0 2px 7px rgba(0, 0, 0, 1.1);
+    box-sizing: border-box;
     border-radius: 10px;
-    width: 210px;
+    width: 85%;
     height: 250px;
     display: flex;
     flex-direction: column;
@@ -32,6 +33,7 @@ export const Image = styled.img`
 `;
 export const Button = styled.button`
     background-color: #9758a6;
+
     width: 100%;
     padding: 6px;
     border: none;
